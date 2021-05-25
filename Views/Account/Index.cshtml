@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h1>Login</h1>
+
+<form method="post" action="~/Account/Login?ReturnUrl=@ViewBag.ReturnUrl">
+    <div class="form-group">
+        <label>Usuário</label>
+        <input type="text" class="form-control" placeholder="Usuário" name="user">
+    </div>
+    <div class="form-group">
+        <label>Senha</label>
+        <input type="password" class="form-control" placeholder="Senha" name="password">
+    </div> 
+    <button type="submit" class="btn btn-primary">Login</button>
+</form>
